@@ -26,7 +26,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#Overview">Description</a>
+      <a href="#Overview">Overview</a>
     </li>
     <li><a href="#Methods">Methods Implemented</a></li>
     <li><a href="#Installation">Installation</a></li>
