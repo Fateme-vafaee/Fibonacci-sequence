@@ -26,15 +26,13 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#Description">Description</a>
+      <a href="#Overview">Description</a>
     </li>
-    <li><a href="#R_Markdown_Structure">R Markdown Structure</a></li>
-    <li><a href="#Code_Functionality">Code Functionality</a></li>
+    <li><a href="#Methods">Methods Implemented</a></li>
+    <li><a href="#Installation">Installation</a></li>
+    <li><a href="#Usage">Usage</a></li>
+    <li><a href="#Complexity_Analysis">Complexity Analysis</a></li>
     <li><a href="#Languages_Used">Languages Used</a></li>
-    <li><a href="#Additional_Points">Additional Points</a></li>
-    <li>
-      <a href="#Customization">Customization</a>
-    </li>
     <li><a href="#Contact">Contact</a></li>
   </ol>
 </details>
@@ -58,6 +56,7 @@ To run these scripts, you need R installed on your machine. You can download and
 ```bash
 git clone https://github.com/yourusername/fibonacci-series-r.git
 cd fibonacci-series-r
+```
 
 
 
@@ -65,22 +64,23 @@ cd fibonacci-series-r
 <p>
 Each Fibonacci calculation method is implemented in a separate R script. You can execute each script directly from the R command line or through an R script execution command in the terminal. For example:
 </p>
+
 Rscript Recursive_Fibonacci.R
 
 
 <h2 id='Complexity_Analysis'>Complexity Analysis</h2>
 <h3>Recursive Implementation</h3>
-<strong>Time Complexity:</strong> Exponential, specifically O(2^n), as each function call spawns two more calls.
-<strong>Space Complexity:</strong> O(n) due to the depth of the recursion stack.
+<strong>Time Complexity:</strong> Exponential, specifically O(2^n), as each function call spawns two more calls.<br>
+<strong>Space Complexity:</strong> O(n) due to the depth of the recursion stack.<br>
 <h3>Dynamic Programming</h3>
-<strong>Time Complexity:</strong> O(n), as it computes each Fibonacci number once.
-<strong>Space Complexity:</strong> O(n) for storing the Fibonacci sequence up to n.
+<strong>Time Complexity:</strong> O(n), as it computes each Fibonacci number once.<br>
+<strong>Space Complexity:</strong> O(n) for storing the Fibonacci sequence up to n.<br>
 <h3>Matrix Exponentiation</h3>
-<strong>Time Complexity:</strong> O(n^3) due to matrix multiplication in each loop iteration.
-<strong>Space Complexity:</strong> O(1), constant space for storing matrices.
+<strong>Time Complexity:</strong> O(n^3) due to matrix multiplication in each loop iteration.<br>
+<strong>Space Complexity:</strong> O(1), constant space for storing matrices.<br>
 <h3>Optimized Matrix Exponentiation</h3>
-<strong>Time Complexity:</strong> O(log n) because of fast exponentiation.
-<strong>Space Complexity:</strong> O(1), as it requires a fixed amount of space for matrices.
+<strong>Time Complexity:</strong> O(log n) because of fast exponentiation.<br>
+<strong>Space Complexity:</strong> O(1), as it requires a fixed amount of space for matrices.<br>
 
 
 <h2 id = 'Contributing'>Contributing</h2>
@@ -90,45 +90,6 @@ Contributions to this project are welcome. You can contribute by improving the c
 <h2 id="Languages_Used"> Languages Used</h2>
 R Packages 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-<!-- GETTING STARTED -->
-<h2 id="Additional_Points"> Additional Points</h2>
-<ul>
-  <li>The code demonstrates how to integrate R code execution with a human-readable report using R markdown.</li>
-  <li>Error handling and more advanced functionalities can be incorporated to enhance the code's robustness.</li>
-  <li>I hope this explanation clarifies the structure and functionality of the R markdown code itself.</li>
-</ul>
-
-### Customization:
-
-## Customizing Data Download (Save_Load function):
-
-<strong>Project Names:</strong> Update the DataSet_Names vector in the Save_Load function to include the desired TCGA project names you want to download data for.<bt>
-<strong>Folder Structure:</strong> Modify the folder creation logic within Save_Load to create a more customized folder structure for downloaded data (e.g., by project type, data type).
-
-## Customizing Plots (Plots function):
-
-<strong>Plot Types: </strong>The code currently generates three plots (Lollipop, PlotVaf, plotmafSummary). You can remove or add different plots provided by the maftools package (e.g., mutation spectrum plots, waterfall plots).<br>
-<strong>Plot Customization:</strong> Within each plot generation section (lollipopPlot, plotTiTv, plotmafSummary), you can modify function arguments to customize plot appearance:<br>
-Change titles, labels, colors using arguments like main, xlab, ylab, col.<br>
-Adjust plot ranges using arguments like xlim, ylim.<br>
-<strong>Advanced Analysis:</strong> Explore functions within maftools for more in-depth analysis before plotting (e.g., filtering mutations, selecting specific genes).
-
-
-### Customizing the Report:
-
-<strong>Markdown Text:</strong> Modify the markdown text sections to provide more specific information about the datasets, plots, or analysis goals.<br>
-<strong>Adding Images:</strong> You can include additional images (not generated by the code) in the markdown text to enhance the report.<br>
-<strong>Report Formatting:</strong> Utilize markdown formatting options (bold, italics, headers) to structure and improve readability of the report.<br>
-
-By following these customization suggestions, users can tailor the R markdown code to their specific TCGA data analysis requirements and generate informative reports.
-
-Feel free to tailor the title and description based on the specific features and focus of your tool.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- CONTACT -->
 ## Contact
